@@ -2,19 +2,19 @@ html {
   overflow-y: scroll;
 }
 :root {
-  --bgcolor: rgb(255, 202, 202);
-  --fontcolor: rgb(39, 30, 30);
-  --linkcolor: rgb(65, 38, 38);
-  --visitedcolor: rgb(65, 38, 38);
+  --bgcolor: #faf4ed;
+  --fontcolor: #575279;
+  --linkcolor: #b4637a;
+  --visitedcolor: #b4637a;
   --precolor: #fff;
   --prebgcolor: #000;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bgcolor: rgb(39, 30, 30);
-    --fontcolor: rgb(255, 225, 225);
-    --linkcolor: rgb(255, 202, 202);
-    --visitedcolor: rgb(255, 202, 202);
+    --bgcolor: #191724;
+    --fontcolor: #ebbcba;
+    --linkcolor: #eb6f92;
+    --visitedcolor: #eb6f92;
     --precolor: #fff;
     --prebgcolor: #383838;
   }
