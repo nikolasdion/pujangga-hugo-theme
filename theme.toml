@@ -1,17 +1,30 @@
-name = "smol"
+name = "pujangga"
 license = "MIT"
-licenselink = "https://github.com/colorchestra/smol/blob/master/LICENSE.md"
-description = "Minimal Hugo theme using a Monospace font and without any tracking or external dependencies."
-homepage = "https://github.com/colorchestra/smol"
-tags = ["blog", "minimal", "monospace", "dark mode", "simple", "clean", "light", "responsive", "fast", "no-js", "no-tracking", "privacy"]
+licenselink = "https://github.com/nikolasdion/pujangga-hugo-theme/blob/master/LICENSE.md"
+description = "Minimal Hugo theme for poetry."
+homepage = "https://github.com/nikolasdion/pujangga-hugo-theme"
+tags = [
+  "blog",
+  "minimal",
+  "monospace",
+  "dark mode",
+  "simple",
+  "clean",
+  "light",
+  "responsive",
+  "fast",
+  "no-js",
+  "no-tracking",
+  "privacy",
+]
 features = ["blog", "privacy", "responsive", "fast"]
-min_version = "0.20"
+min_version = "0.1.0"
 
 [author]
-  name = "morph"
-  homepage = "morph.sh"
+name="nikolasdion"
+homepage = "https://github.com/nikolasdion"
 
 [original]
-  author = "Vimux"
-  homepage = "https://github.com/Vimux"
-  repo = "https://github.com/Vimux/blank"
+author = "morph"
+homepage = "https://morph.sh"
+repo = "https://github.com/colorchestra/smol"
