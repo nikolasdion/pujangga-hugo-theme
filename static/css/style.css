@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Forum';
+  src: url('fonts/Forum-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   overflow-y: scroll;
 }
@@ -11,10 +18,10 @@ html {
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bgcolor: #191724;
-    --fontcolor: #ebbcba;
-    --linkcolor: #eb6f92;
-    --visitedcolor: #eb6f92;
+    --bgcolor: #242132;
+    --fontcolor: #fadad9;
+    --linkcolor: #ebbcba;
+    --visitedcolor: #ebbcba;
     --precolor: #fff;
     --prebgcolor: #383838;
   }
@@ -23,7 +30,7 @@ body {
   max-width: 800px;
   margin: 40px auto;
   padding: 0 10px;
-  font: 16px/1.5 serif;
+  font: 18px/1.5 Forum;
   color: var(--fontcolor);
   background: var(--bgcolor);
 }
@@ -68,7 +75,7 @@ article {
 }
 figcaption {
   color: #888;
-  font: 12px/1.5 monospace;
+  font: 12px/1.5 Forum;
   text-align: center;
 }
 figure {
@@ -79,4 +86,14 @@ img {
   max-width: 100%;
   height: auto;
   margin: auto;
+}
+
+.site-title {
+  font-size: 48px;
+  text-transform: lowercase;
+  a {
+    color: var(--fontcolor);
+    font-style: unset;
+    text-decoration: none;
+  }
 }
