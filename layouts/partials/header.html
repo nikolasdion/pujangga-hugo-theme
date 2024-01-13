@@ -1,6 +1,6 @@
 <header>
 	<div ><a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> </div> 
-	{{ if (not (eq .Site.Params.subtitle "")) }} <div><p class="subtitle">{{ .Site.Params.subtitle }}</div> {{ end }}
+	{{ if (not (eq .Site.Params.subtitle "")) }} <div><p class="site-subtitle">{{ .Site.Params.subtitle }}</div> {{ end }}
 	<p>
 	<nav>
 		<a href="/"><b>Start</b></a>.

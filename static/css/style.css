@@ -9,19 +9,17 @@ html {
   overflow-y: scroll;
 }
 :root {
-  --bgcolor: #faf4ed;
-  --fontcolor: #575279;
-  --linkcolor: #b4637a;
-  --visitedcolor: #b4637a;
+  --bgcolor: #FAF4ED;
+  --fontcolor: #1B1A1E;
+  --linkcolor: #9C3946;
   --precolor: #fff;
   --prebgcolor: #000;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bgcolor: #242132;
-    --fontcolor: #fadad9;
+    --bgcolor: #1B1A1E;
+    --fontcolor: #FAF4ED;
     --linkcolor: #ebbcba;
-    --visitedcolor: #ebbcba;
     --precolor: #fff;
     --prebgcolor: #383838;
   }
@@ -34,14 +32,8 @@ body {
   color: var(--fontcolor);
   background: var(--bgcolor);
 }
-a:link {
+a:link, a:visited, a:active {
   color: var(--linkcolor);
-}
-a:visited {
-  color: var(--visitedcolor);
-}
-a:active {
-  color: var(--visitedcolor);
 }
 h1,
 h2,
@@ -92,8 +84,14 @@ img {
   font-size: 48px;
   text-transform: lowercase;
   color: var(--fontcolor);
-  font-style: unset;
   text-decoration: none;
+  a:link, a:visited, a:active {
+    color: var(--fontcolor);
+  }
+}
+
+.site-subtitle {
+  font-style: italic;
 }
 
 .tag {
@@ -104,6 +102,4 @@ img {
   font-style: italic;
 }
 
-.subtitle {
-  font-style: italic;
-}
+
