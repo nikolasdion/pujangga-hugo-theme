@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Forum';
-  src: url('fonts/Forum-Regular.ttf');
+  font-family: "Forum";
+  src: url("fonts/Forum-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -91,9 +91,19 @@ img {
 .site-title {
   font-size: 48px;
   text-transform: lowercase;
-  a {
-    color: var(--fontcolor);
-    font-style: unset;
-    text-decoration: none;
-  }
+  color: var(--fontcolor);
+  font-style: unset;
+  text-decoration: none;
+}
+
+.tag {
+  opacity: 70%;
+}
+
+.date {
+  font-style: italic;
+}
+
+.subtitle {
+  font-style: italic;
 }
