@@ -32,9 +32,16 @@ body {
   color: var(--fontcolor);
   background: var(--bgcolor);
 }
-a:link, a:visited, a:active {
-  color: var(--linkcolor);
+
+a {
+  transition: 700ms text-decoration;
+  text-decoration-color: transparent;
+  color: var(--linkcolor)
 }
+a:hover {
+  text-decoration-color: var(--linkcolor);
+}
+
 h1,
 h2,
 h3 {
@@ -83,11 +90,8 @@ img {
 .site-title {
   font-size: 48px;
   text-transform: lowercase;
-  color: var(--fontcolor);
   text-decoration: none;
-  a:link, a:visited, a:active {
-    color: var(--fontcolor);
-  }
+  color: var(--fontcolor);
 }
 
 .site-subtitle {
