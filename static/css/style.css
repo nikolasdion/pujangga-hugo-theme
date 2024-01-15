@@ -34,12 +34,13 @@ body {
 }
 
 a {
-  transition: 700ms text-decoration;
-  text-decoration-color: transparent;
+  transition: 700ms border-color;
   color: var(--linkcolor);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
 a:hover {
-  text-decoration-color: var(--linkcolor);
+  border-bottom-color: var(--linkcolor);
 }
 
 h1,
@@ -92,6 +93,10 @@ img {
   text-transform: lowercase;
   text-decoration: none;
   color: var(--fontcolor);
+  border-bottom: 2px solid transparent;
+}
+.site-title:hover {
+  border-bottom-color: var(--fontcolor);
 }
 
 .site-subtitle {

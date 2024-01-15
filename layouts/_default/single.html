@@ -3,8 +3,8 @@
 		<article>
 			<h1>{{ .Title }}</h1>
 			<p>
-				{{ range .Params.tags }}
-				<a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }},</a> 
+				{{ range .Params.locations }}
+				<a class="tag" href="{{ "/locations/" | relLangURL }}{{ . | urlize }}">{{ . }},</a> 
 				{{ end }}
 				<time class="date">{{ .Date.Format (default "2006/01/02" .Site.Params.dateFmt) }} </time>
 			</p>	
