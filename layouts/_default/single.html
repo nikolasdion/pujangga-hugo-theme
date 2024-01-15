@@ -2,15 +2,15 @@
 	<main>
 		<article>
 			<h1>{{ .Title }}</h1>
-			<time class="date">{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time>
-			<div>
-				{{ .Content }}
-			</div>
-			<div>
+			<p>
 				{{ range .Params.tags }}
-				<a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+				<a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }},</a> 
 				{{ end }}
-			</div>
+				<time class="date">{{ .Date.Format (default "2006/01/02" .Site.Params.dateFmt) }} </time>
+			</p>	
+			<p>
+				{{ .Content }}
+			</p>
 		</article>
 	</main>
 {{ partial "sidebar.html" . }}
