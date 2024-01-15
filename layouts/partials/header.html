@@ -3,7 +3,6 @@
 	{{ if (not (eq .Site.Params.subtitle "")) }} <div><p class="site-subtitle">{{ .Site.Params.subtitle }}</div> {{ end }}
 	<p>
 	<nav>
-		<a href="/"><b>Start</b></a>.
 		{{ with .Site.Menus.main }}
 		{{ range . }}
 		<a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>.

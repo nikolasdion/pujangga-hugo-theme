@@ -48,7 +48,7 @@ weight = 3
 
 # Footer
 [[menu.footer]]
-name = "Github"
+name = "GitHub"
 url = "https://github.com/example"
 weight = 1
 

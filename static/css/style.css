@@ -9,16 +9,16 @@ html {
   overflow-y: scroll;
 }
 :root {
-  --bgcolor: #FAF4ED;
-  --fontcolor: #1B1A1E;
-  --linkcolor: #9C3946;
+  --bgcolor: #faf4ed;
+  --fontcolor: #1b1a1e;
+  --linkcolor: #9b636a;
   --precolor: #fff;
   --prebgcolor: #000;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bgcolor: #1B1A1E;
-    --fontcolor: #FAF4ED;
+    --bgcolor: #1b1a1e;
+    --fontcolor: #faf4ed;
     --linkcolor: #ebbcba;
     --precolor: #fff;
     --prebgcolor: #383838;
@@ -36,7 +36,7 @@ body {
 a {
   transition: 700ms text-decoration;
   text-decoration-color: transparent;
-  color: var(--linkcolor)
+  color: var(--linkcolor);
 }
 a:hover {
   text-decoration-color: var(--linkcolor);
@@ -74,7 +74,7 @@ article {
 }
 figcaption {
   color: #888;
-  font: 12px/1.5 Forum;
+  font: 0.8rem/1.5;
   text-align: center;
 }
 figure {
@@ -88,7 +88,7 @@ img {
 }
 
 .site-title {
-  font-size: 48px;
+  font-size: 3rem;
   text-transform: lowercase;
   text-decoration: none;
   color: var(--fontcolor);
@@ -99,11 +99,6 @@ img {
 }
 
 .tag {
-  opacity: 70%;
-}
-
-.date {
+  font-size: 0.8rem;
   font-style: italic;
 }
-
-
