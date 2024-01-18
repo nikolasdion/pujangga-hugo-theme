@@ -2,7 +2,7 @@
 
 A minimal [Hugo](https://gohugo.io/) theme for my poetry blog [pujangga](https://pujangga.nikolasdion.com/).
 
-This theme is based on [smol](https://github.com/colorchestra/smol) by [morph](https://morph.sh), which in turn is based on [Blank](https://github.com/Vimux/Blank) by [Vimux](https://github.com/Vimux). The colour palette is based on [Rosé Pine](https://rosepinetheme.com/)
+This theme is based on [smol](https://github.com/colorchestra/smol) by [morph](https://morph.sh), which in turn is based on [Blank](https://github.com/Vimux/Blank) by [Vimux](https://github.com/Vimux).
 
 ## Installation
 
