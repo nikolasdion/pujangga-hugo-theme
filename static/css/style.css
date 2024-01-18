@@ -27,8 +27,8 @@ html {
 body {
   max-width: 800px;
   margin: 2rem auto;
-  padding: 0 10px;
-  font: 18px/1.5 Forum;
+  padding: 0 2rem;
+  font: 18px/1.5 Forum, serif;
   color: var(--fontcolor);
   background: var(--bgcolor);
 }
@@ -74,7 +74,7 @@ article {
   width: 100%;
 }
 figcaption {
-  color: #888;
+  color: var(--fontcolor);
   font: 0.8rem/1.5;
   text-align: center;
 }
