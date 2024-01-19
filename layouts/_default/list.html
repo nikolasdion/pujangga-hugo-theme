@@ -6,27 +6,13 @@
 			{{ with .Content }}<div>{{ . }}</div>{{ end }}
 		</div>
 		{{ end }}
-		{{ if eq .Title "Posts" }}
-			{{ range .Pages.GroupByDate "2006" }}
-			<h2>{{ .Key }}</h2>
-			<ul>
-				{{ range .Pages.ByTitle }}
-				<li>
-					<span class="date">{{ .Date.Format "2006/01/02" }}</span>
-					<a href="{{ .RelPermalink }}">{{.Title }}</a>
-				</li>
-				{{ end }}
-			</ul>
-			{{ end }}
-		{{ else  }}	
-			<ul>
-				{{ range .Paginator.Pages }}
-				<li>
-					<a href="{{ .RelPermalink }}">{{.Title }}</a>
-				</li>
-				{{ end }}
-			</ul>
-			{{ partial "pagination.html" . }}
-		{{ end  }}
+        <ul>
+            {{ range .Paginator.Pages.ByTitle }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{.Title }}</a>
+            </li>
+            {{ end }}
+        </ul>
+        {{ partial "pagination.html" . }}
 	</main>
 {{ end }}
