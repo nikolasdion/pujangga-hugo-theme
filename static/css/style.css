@@ -43,6 +43,10 @@ a:hover {
   border-bottom-color: var(--linkcolor);
 }
 
+ul {
+  list-style-type: circle;
+}
+
 h1,
 h2,
 h3 {
@@ -95,6 +99,7 @@ img {
   color: var(--fontcolor);
   border-bottom: 2px solid transparent;
 }
+
 .site-title:hover {
   border-bottom-color: var(--fontcolor);
 }
@@ -111,11 +116,4 @@ img {
 
 .location:hover {
   border-bottom-color: var(--fontcolor);
-}
-
-header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background-color: var(--bgcolor);
 }
