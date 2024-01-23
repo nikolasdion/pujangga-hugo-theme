@@ -7,7 +7,9 @@
 		<time class="date">{{ .Date.Format (default "2006/01/02" .Site.Params.dateFmt) }} </time>
 	</p>	
 	<p>
-		{{ .Summary }}
+		{{ range first 2 (split .Content "<br>" )}}
+			{{ . | safeHTML}} <br>
+		{{ end }}
 		{{ if .Truncated }}
 			<a href="{{ .Permalink }}">Read more...</a>
 		{{ end }}
