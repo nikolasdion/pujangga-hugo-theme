@@ -9,7 +9,7 @@
 	<nav>
 		{{ with .Site.Menus.main }}
 		{{ range . }}
-		<a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>.
+			<a href="{{ .URL | relURL }}">{{ .Name }}</a> / 
 		{{ end }}
 	</nav>
 	</p>

@@ -6,7 +6,9 @@
 				{{ range .Params.locations }}
 				<a class="location" href="{{ "/locations/" | relLangURL }}{{ . | urlize }}">{{ . }},</a> 
 				{{ end }}
+				{{ if .Date }}
 				<time class="date">{{ .Date.Format (default "2006/01/02" .Site.Params.dateFmt) }} </time>
+				{{ end }}
 			</p>	
 			<p>
 				{{ .Content }}
