@@ -1,10 +1,10 @@
 <article>
 	<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-	<p>
+	<p class="location-date">
 		{{ range .Params.locations }}
 		<a class="location" href="{{ "/locations/" | relLangURL }}{{ . | urlize }}">{{ . }},</a> 
 		{{ end }}
-		<time class="date">{{ .Date.Format (default "2006/01/02" .Site.Params.dateFmt) }} </time>
+		<time class="date">{{ .Date.Format (default "2 January 2006" .Site.Params.dateFmt) }} </time>
 	</p>	
 	<p>
 		{{ range first 2 (split .Content "<br>" )}}
